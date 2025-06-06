@@ -1,0 +1,14 @@
+.App-header{
+  margin: 3rem 0;
+}
+
+.App-Img {
+  max-width: 10rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.App-footer {
+  text-align: center;
+  margin: 3rem 0;
+}
