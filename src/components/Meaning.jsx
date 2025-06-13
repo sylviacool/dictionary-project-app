@@ -8,12 +8,22 @@ const Meaning = ( {meaning} ) => {
 
       {meaning.definitions?.map((def, i) => (
         <div key={i}>
-          <p>Definition: {def.definition}</p>
+          <p>
+            <strong>Definition:</strong> {def.definition}
+          </p>
 
           {/* Only show Example if it exists */}
-          <em>{def.example && <p>Example: {def.example}</p>}</em>
+          <em>
+            {def.example && (
+              <p>
+                <strong>Example:</strong> {def.example}
+              </p>
+            )}
+          </em>
           {def.synonyms && def.synonyms.length > 0 && (
-            <p>Synonyms: {def.synonyms.join(", ")}</p>
+            <p>
+              <strong>Synonyms:</strong> {def.synonyms.join(", ")}
+            </p>
           )}
         </div>
       ))}
