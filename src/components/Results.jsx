@@ -1,12 +1,17 @@
 import React from 'react'
 import Meaning from './Meaning';
+import Phonetics from './Phonetics';
 
 const Results = ({result}) => {
   if (result) {
     return (
       <div>
-        
         <h2>{result.word}</h2>
+        {result.phonetics?.map((phonetic, idx) =>  (
+          <div key={idx}>
+            <Phonetics phonetic = {phonetic}/>
+          </div>
+        ))}
         {result.meanings?.map((meaning, index) => (
           <Meaning key={index} meaning={meaning} />
           /*
