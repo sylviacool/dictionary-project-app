@@ -1,0 +1,16 @@
+.Meaning {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.1rem
+}
+
+.Meaning h3 {
+  color: #0077b6;
+  margin-top:1rem ;
+}
+
+.Meaning p {
+  margin: 0.5rem 0;
+}
