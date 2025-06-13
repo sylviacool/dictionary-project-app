@@ -17,6 +17,19 @@ input[type="search"] {
   padding: 0.75rem;
   border-radius: 0.6rem;
   border: 0.1rem solid #ccc;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.7rem;
   font-size: 1rem;
+}
+
+.Dictionary section {
+  background:white ;
+  padding: 3rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.1);
+  margin: 2rem 0;
+}
+
+.Dictionary .hint {
+  color: #0077b6;
+  font-size: 0.9rem;
 }

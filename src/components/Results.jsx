@@ -5,22 +5,26 @@ import Phonetics from './Phonetics';
 const Results = ({result}) => {
   if (result) {
     return (
-      <div>
-        <h2>{result.word}</h2>
-        {result.phonetics?.map((phonetic, idx) =>  (
-          <div key={idx}>
-            <Phonetics phonetic = {phonetic}/>
-          </div>
-        ))}
-        {result.meanings?.map((meaning, index) => (
-          <Meaning key={index} meaning={meaning} />
-          /*
+      <div className="Results">
+        <section>
+          <h2>{result.word}</h2>
+          {result.phonetics?.map((phonetic, idx) => (
+            <div key={idx}>
+              <Phonetics phonetic={phonetic} />
+            </div>
+          ))}
+        </section>
+        <section>
+          {result.meanings?.map((meaning, index) => (
+            <Meaning key={index} meaning={meaning} />
+            /*
   {meaning} here is a single object from the result.meanings array map function.
   we pass that meaning object as a prop to your Meaning component.
   The Meaning component then uses that object to display the part of speech,
   definitions, and examples. 
 */
-        ))}
+          ))}
+        </section>
       </div>
     );
   } else {
