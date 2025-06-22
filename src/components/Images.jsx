@@ -18,9 +18,9 @@ const Images = ({ keyword }) => {
   if (!photos.length) return null;
 
   return (
-    <section>
+    <section className="Images-section">
       <h3>Images</h3>
-      <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem" }}>
+      <div className="Images-grid">
         {photos.map((photo) => (
           <a
             href={photo.src.original}
@@ -31,7 +31,6 @@ const Images = ({ keyword }) => {
             <img
               src={photo.src.medium}
               alt={photo.alt}
-              style={{ width: "18rem", borderRadius: "0.5rem" }}
             />
           </a>
         ))}
