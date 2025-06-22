@@ -9,8 +9,26 @@
 .Meaning h3 {
   color: #0077b6;
   margin-top:1rem ;
+  font-size: 2.4rem;
+  line-height: 1.5;
 }
 
 .Meaning p {
   margin: 0.5rem 0;
+}
+
+.Meaning .definition {
+  color: #22223b;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.Meaning .example {
+  color: #6c757d;
+  opacity: 0.6;
+  font-size: 1rem;
+  background: #f0f8ff;
+  border-left: 0.3rem solid #0077b6;
+  padding: 0.3rem 0.8rem;
+  margin-bottom: 0.5rem;
 }

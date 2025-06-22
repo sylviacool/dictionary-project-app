@@ -1,4 +1,5 @@
 import React from 'react'
+import './Meaning.css'; 
 
 const Meaning = ( {meaning} ) => {
   return (
@@ -8,14 +9,14 @@ const Meaning = ( {meaning} ) => {
 
       {meaning.definitions?.map((def, i) => (
         <div key={i}>
-          <p>
+          <p className='definition'>
             <strong>Definition:</strong> {def.definition}
           </p>
 
           {/* Only show Example if it exists */}
           <em>
             {def.example && (
-              <p>
+              <p className='example'>
                 <strong>Example:</strong> {def.example}
               </p>
             )}

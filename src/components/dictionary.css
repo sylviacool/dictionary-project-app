@@ -33,3 +33,9 @@ input[type="search"] {
   color: #0077b6;
   font-size: 0.9rem;
 }
+
+.Dictionary h1 {
+  color: #023e8a;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
