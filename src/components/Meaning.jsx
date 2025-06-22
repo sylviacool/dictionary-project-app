@@ -1,5 +1,5 @@
 import React from 'react'
-import './Meaning.css'; 
+import './meaning.css'; 
 
 const Meaning = ( {meaning} ) => {
   return (
