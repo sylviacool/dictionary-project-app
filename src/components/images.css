@@ -1,0 +1,33 @@
+.Images-section {
+  margin: 2rem 0;
+  background: #fff;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.08);
+  padding: 2rem;
+}
+
+.Images-section h3 {
+  color: #0077b6;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.Images-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.Images-grid img {
+  width: 18rem;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 0.2rem 0.8rem rgba(0,0,0,0.07);
+}
+
+.Images-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.4rem 1.6rem rgba(0,0,0,0.13);
+}

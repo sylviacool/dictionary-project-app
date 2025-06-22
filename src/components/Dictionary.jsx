@@ -3,6 +3,7 @@ import Results from './Results';
 import axios from 'axios';
 import './dictionary.css';
 import "bootstrap/dist/css/bootstrap.min.css";
+import Images from "./Images";
 
 const Dictionary = () => {
   const [keyword, setKeyword] = useState("sunset"); // User input
@@ -58,6 +59,9 @@ const Dictionary = () => {
           <div className="hint">suggested words: wine, yoga, sunset....</div>
         </section>
         <Results result={results} />
+
+        {/* Pass the keyword to the Images component */}
+        <Images keyword={keyword} />
       </div>
     );
 }
