@@ -1,7 +1,7 @@
 import React from 'react'
 import Meaning from './Meaning';
 import Phonetics from './Phonetics';
-import './Results.css';
+import './results.css';
 
 const Results = ({result}) => {
   if (result) {
